@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Awareness for Families & Students</title>
+    <meta name="description" content="Smart Money Decisions Start Early. A guide for families and students.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for better typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Financial Awareness</a>
+            <ul class="nav-links">
+                <li><a href="#basics">Basics</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#calculators">Tools</a></li>
+                <li><a href="#ai-guide">AI Guide</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Wrapper for mobile nav overlay -->
+    <div class="content-wrapper">
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="container hero-content">
+                <h1>Financial Awareness for Families & Students</h1>
+                <p class="tagline">"Smart Money Decisions Start Early"</p>
+                <div class="hero-buttons">
+                    <a href="#basics" class="btn btn-primary">Start Learning</a>
+                    <a href="#calculators" class="btn btn-secondary">Try Tools</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Feature 1: Financial Awareness Basics -->
+        <section id="basics" class="section">
+            <div class="container">
+                <h2 class="section-title">Financial Awareness Basics</h2>
+                <div class="basics-grid">
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button class="accordion-header">What is Meaning of Financial Awareness? <span class="icon">+</span></button>
+                            <div class="accordion-content">
+                                <p>It's understanding how money works: earning, saving, investing, and spending wisely. It helps you make smart choices every day.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">Why Start Early? <span class="icon">+</span></button>
+                            <div class="accordion-content">
+                                <p>Money habits form early. Learning now prevents costly mistakes later, like debt traps or zero savings.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">Common Mistakes <span class="icon">+</span></button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Buying things on EMI you don't need.</li>
+                                    <li>Spending all income without saving first.</li>
+                                    <li>Ignoring small expenses that add up.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-visual">
+                        <h3>The Impact of Time</h3>
+                        <div class="timeline">
+                            <div class="timeline-point">
+                                <div class="dot"></div>
+                                <div class="label">Today</div>
+                                <div class="desc">Start Saving ₹500/mo</div>
+                            </div>
+                            <div class="timeline-point">
+                                <div class="dot"></div>
+                                <div class="label">1 Year</div>
+                                <div class="desc">Integration of Habit (₹6,000+)</div>
+                            </div>
+                            <div class="timeline-point">
+                                <div class="dot"></div>
+                                <div class="label">5 Years</div>
+                                <div class="desc">Safety Net & Compound Growth</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 2: Money Management Topics -->
+        <section id="topics" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Money Management Modules</h2>
+                <p class="section-subtitle">Click a card to learn more.</p>
+                <div class="topics-grid">
+                    <!-- Topics will be populated by JS or static HTML -->
+                    <div class="topic-card" data-topic="budgeting">
+                        <div class="icon">🏠</div>
+                        <h3>Budgeting for Households</h3>
+                    </div>
+                    <div class="topic-card" data-topic="saving">
+                        <div class="icon">💰</div>
+                        <h3>Saving vs Spending</h3>
+                    </div>
+                    <div class="topic-card" data-topic="banking">
+                        <div class="icon">🏦</div>
+                        <h3>Banking Basics</h3>
+                    </div>
+                    <div class="topic-card" data-topic="loans">
+                        <div class="icon">📉</div>
+                        <h3>Loans & EMIs</h3>
+                    </div>
+                    <div class="topic-card" data-topic="insurance">
+                        <div class="icon">🛡️</div>
+                        <h3>Insurance & Funds</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 3: Interactive Learning (Quiz) -->
+        <section id="quiz" class="section">
+            <div class="container">
+                <h2 class="section-title">Test Your Knowledge</h2>
+                <div id="quiz-container" class="quiz-box">
+                    <div class="quiz-start">
+                        <p>Ready to check your money smarts? Take our 5-question quiz!</p>
+                        <button id="start-quiz-btn" class="btn btn-primary">Start Quiz</button>
+                    </div>
+                    <div id="quiz-question" class="hidden">
+                        <!-- Questions injected primarily via JS -->
+                    </div>
+                    <div id="quiz-result" class="hidden">
+                        <!-- Results injected via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 4: Calculators (Innovation 1) -->
+        <section id="calculators" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Financial Tools</h2>
+                <div class="calculators-grid">
+                    <!-- EMI Calculator -->
+                    <div class="calc-card">
+                        <h3>EMI Calculator</h3>
+                        <div class="input-group">
+                            <label>Loan Amount (₹)</label>
+                            <input type="number" id="emi-principal" placeholder="e.g. 500000">
+                        </div>
+                        <div class="input-group">
+                            <label>Interest Rate (% p.a)</label>
+                            <input type="number" id="emi-rate" placeholder="e.g. 10">
+                        </div>
+                        <div class="input-group">
+                            <label>Tenure (Months)</label>
+                            <input type="number" id="emi-tenure" placeholder="e.g. 24">
+                        </div>
+                        <button id="calc-emi-btn" class="btn btn-small">Calculate EMI</button>
+                        <div id="emi-result" class="result-box hidden">
+                            <p>Monthly EMI: <span id="emi-monthly">₹0</span></p>
+                            <p>Total Interest: <span id="emi-total-interest">₹0</span></p>
+                            <p>Total Payable: <span id="emi-total-payment">₹0</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Savings Calculator -->
+                    <div class="calc-card">
+                        <h3>Savings Growth</h3>
+                        <div class="input-group">
+                            <label>Monthly Savings (₹)</label>
+                            <input type="number" id="save-monthly" placeholder="e.g. 2000">
+                        </div>
+                        <div class="input-group">
+                            <label>Duration (Years)</label>
+                            <input type="number" id="save-years" placeholder="e.g. 5">
+                        </div>
+                        <div class="input-group">
+                            <label>Estimated Return (% p.a)</label>
+                            <input type="number" id="save-rate" placeholder="e.g. 6" value="6">
+                        </div>
+                        <button id="calc-save-btn" class="btn btn-small">Calculate Growth</button>
+                        <div id="save-result" class="result-box hidden">
+                            <p>Total Invested: <span id="save-invested">₹0</span></p>
+                            <p>Est. Total Value: <span id="save-total">₹0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 5: AI Money Guide (Innovation 2) -->
+        <section id="ai-guide" class="section">
+            <div class="container">
+                <h2 class="section-title">AI Money Guide 🤖</h2>
+                <p class="section-subtitle">Type a financial term (e.g., 'EMI', 'Budget', 'Savings') to get a simple explanation.</p>
+                <div class="ai-box">
+                    <input type="text" id="ai-input" placeholder="Ask about a money term..." autocomplete="off">
+                    <button id="ai-ask-btn" class="btn btn-primary">Ask Guide</button>
+                </div>
+                <div id="ai-response" class="ai-response-box hidden">
+                    <!-- AI response shows here -->
+                </div>
+                <div class="suggested-terms">
+                    <span>Try: </span>
+                    <button class="term-chip">EMI</button>
+                    <button class="term-chip">Budget</button>
+                    <button class="term-chip">Inflation</button>
+                    <button class="term-chip">Asset</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Sections -->
+        <section id="audience" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Who This Is For</h2>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="icon">🎓</div>
+                        <h3>Students</h3>
+                        <p>Learn money skills before you start earning.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="icon">👨‍👩‍👧</div>
+                        <h3>Parents</h3>
+                        <p>Manage household finances better and teach kids.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="icon">🏫</div>
+                        <h3>Teachers</h3>
+                        <p>Resources to introduce financial literacy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks" class="section">
+            <div class="container">
+                <h2 class="section-title">Why This Matters 🚨</h2>
+                <div class="risk-content">
+                    <p>Ignoring financial awareness can lead to:</p>
+                    <ul class="risk-list">
+                        <li>⚠️ <strong>High-Interest Debt:</strong> Getting trapped in loans you can't repay.</li>
+                        <li>⚠️ <strong>Zero Savings:</strong> No safety net for emergencies.</li>
+                        <li>⚠️ <strong>Family Stress:</strong> Money arguments affect relationships.</li>
+                        <li>⚠️ <strong>Scams:</strong> Losing money to "get rich quick" schemes.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="section highlight-section">
+            <div class="container">
+                <h2>Our Vision</h2>
+                <blockquote>
+                    “To build a simple, mobile-first, AI-assisted financial awareness platform that builds confidence, not complexity.”
+                </blockquote>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Modals for Topics -->
+    <div id="topic-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Topic Title</h2>
+            <div id="modal-body">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Financial Awareness Initiative. All rights reserved.</p>
+            <p>Empowering Families & Students.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
